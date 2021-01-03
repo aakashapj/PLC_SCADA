@@ -1,0 +1,47 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 270 300"
+     preserveAspectRatio="none">
+	 
+	<hmi:self type="widget" displayName="CabinetSmallBlankLeftClosed" name="extended.CabinetSmallBlankLeftClosed" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BasicColor"         type="HmiColor"  default="0xFFEEEEEE"  />	
+    </hmi:self>
+	
+     <defs>
+       <hmi:localDef name="Color" type="HmiColor" hmi-bind:value="{{ParamProps.BasicColor}}"  />
+     </defs>   
+  <metadata>
+    <hmi:self itemType="HmiButton" name="Template for CabinetSmallBlankLeftClosed" version="1.0.0" performanceClass="xl" />
+  </metadata>
+  <linearGradient id="Shape_Door_2_" gradientUnits="userSpaceOnUse" x1="134.9668" y1="3.3457" x2="134.9668" y2="297.1977">
+    <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.129))}}" />
+    <stop offset="2.788184e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.000))}}" />
+    <stop offset="4.347952e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.129))}}" />
+    <stop offset="0.4907" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.145))}}" />
+    <stop offset="0.9379" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.190))}}" />
+    <stop offset="0.9529" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.206))}}" />
+    <stop offset="0.9682" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.251))}}" />
+    <stop offset="0.9836" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.327))}}" />
+    <stop offset="0.999" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.433))}}" />
+    <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.441))}}" />
+  </linearGradient>
+  <rect id="Shape_Door_1_" x="2.4" y="2.4" fill="url(#Shape_Door_2_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="265.2" height="295.2" />
+  <g id="Handle_2_">
+    <linearGradient id="Shape_Handle_1_" gradientUnits="userSpaceOnUse" x1="270.2422" y1="378.9629" x2="209.6681" y2="37.483">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.000))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.516))}}" />
+    </linearGradient>
+    <rect id="Shape_Handle_2_" x="236" y="191" fill="url(#Shape_Handle_1_)" width="11" height="51.4" />
+    <polygon id="Shadow_2_" fill="#646567" points="232.3,187.4 232.3,242.5 236,242.5 236,191 247,191 247,187.4" />
+    <polyline id="Reflection_Line_2_" fill="none" hmi-bind:stroke="{{Converter.RGBA(ParamProps.BasicColor)}}" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" points="247,187.4 247,242.4 232.3,242.4" />
+  </g>
+</svg>
