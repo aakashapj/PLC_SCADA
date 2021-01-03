@@ -1,0 +1,40 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 300 300"
+     preserveAspectRatio="none">
+	 
+	<hmi:self type="widget" displayName="ImpulseOverlay1" name="extended.ImpulseOverlay1" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BasicColor"         			type="HmiColor"  default="0xFF575756"  />
+		<hmi:paramDef name="ContrastColor"      			type="HmiColor"  default="0xFFFFFFFF"  />	
+		<hmi:paramDef name="ImpulsePosition"         		type="number" 	 default="2"/>
+    </hmi:self>
+	
+     <defs>
+       <hmi:localDef name="Color" type="HmiColor" hmi-bind:value="{{ParamProps.BasicColor}}"  />
+     </defs>   
+  <metadata>
+    <hmi:self itemType="HmiButton" name="Template for ImpulseOverlay1" version="1.0.0" performanceClass="xl" />
+  </metadata>
+  <linearGradient id="Button_1_" gradientUnits="userSpaceOnUse" x1="-56.4912" y1="-56.4287" x2="410.0245" y2="410.087">
+    <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.000))}}" />
+    <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.516))}}" />
+  </linearGradient>
+  <circle id="Button" fill="url(#Button_1_)" stroke="#8C8C91" stroke-width="0.75" stroke-miterlimit="10" cx="150" cy="150.1" r="148" />
+  <path id="Symbols0" hmi-bind:fill="{{Converter.RGBA(ParamProps.BasicColor)}}" hmi-bind:stroke="{{Converter.RGBA(ParamProps.BasicColor)}}" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M105.5,190.5h-81v-81h81V190.5z M171.8,128.3h-43.5v43.5h43.5V128.3z M256.8,128.2h-43.5v43.5h43.5V128.2z" 
+  hmi-bind:display="{{ ParamProps.ImpulsePosition&lt;1 ? 'inline' : 'none' }}"/>
+  <path id="Symbols1" hmi-bind:fill="{{Converter.RGBA(ParamProps.BasicColor)}}" hmi-bind:stroke="{{Converter.RGBA(ParamProps.BasicColor)}}" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M105.5,190.5h-81v-81h81V190.5z M171.8,128.3h-43.5v43.5h43.5V128.3z M256.8,128.2h-43.5v43.5h43.5V128.2z" 
+  hmi-bind:display="{{ ParamProps.ImpulsePosition>=1 &amp; ParamProps.ImpulsePosition&lt;2 ? 'inline' : 'none' }}"/>
+  <path id="Symbols2" hmi-bind:fill="{{Converter.RGBA(ParamProps.BasicColor)}}" hmi-bind:stroke="{{Converter.RGBA(ParamProps.BasicColor)}}" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M190.5,190.5h-81v-81h81V190.5z M86.8,128.3H43.3v43.5h43.5V128.3z M256.8,128.2h-43.5v43.5h43.5V128.2z" 
+  hmi-bind:display="{{ ParamProps.ImpulsePosition>=2 &amp; ParamProps.ImpulsePosition&lt;3 ? 'inline' : 'none' }}"/>
+  <path id="Symbols3" hmi-bind:fill="{{Converter.RGBA(ParamProps.BasicColor)}}" hmi-bind:stroke="{{Converter.RGBA(ParamProps.BasicColor)}}" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M275.5,190.5h-81v-81h81V190.5z M86.8,128.3H43.3v43.5h43.5V128.3z M171.8,128.2h-43.5v43.5h43.5V128.2z" 
+  hmi-bind:display="{{ ParamProps.ImpulsePosition>=3 ? 'inline' : 'none' }}"/>
+</svg>

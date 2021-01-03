@@ -1,0 +1,30 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 105 300"
+     preserveAspectRatio="none">
+	 
+	<hmi:self type="widget" displayName="ScaleFrom_0-20-Style1" name="extended.ScaleFrom_0-20-Style1" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BasicColor"         type="HmiColor"  default="0xFFEEEEEE"  />
+    </hmi:self>
+	
+     <defs>
+       <hmi:localDef name="Color" type="HmiColor" hmi-bind:value="{{ParamProps.BasicColor}}"  />
+     </defs>   
+  <metadata>
+    <hmi:self itemType="HmiButton" name="Template for ScaleFrom_0-20-Style1" version="1.0.0" performanceClass="xl" />
+  </metadata>
+  <linearGradient id="Scale_1_" gradientUnits="userSpaceOnUse" x1="-166.498" y1="-43.168" x2="121.502" y2="210.832">
+    <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.000))}}" />
+    <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.516))}}" />
+  </linearGradient>
+  <path id="Scale_2_" fill="url(#Scale_1_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M102.7,8.1H2.4V2.4h100.3V8.1z M31.3,16.9H2.4v5.7h28.9V16.9z M31.3,31.3H2.4V37h28.9V31.3z M31.3,45.8H2.4v5.7h28.9V45.8z   M31.3,60.3H2.4V66h28.9V60.3z M61.1,74.8H2.4v5.7h58.8V74.8z M31.3,89.3H2.4v5.7h28.9V89.3z M31.3,103.7H2.4v5.7h28.9V103.7z   M31.3,118.2H2.4v5.7h28.9V118.2z M31.3,132.7H2.4v5.7h28.9V132.7z M102.7,147.2H2.4v5.7h100.3V147.2z M31.3,161.6H2.4v5.7h28.9  V161.6z M31.3,176.1H2.4v5.7h28.9V176.1z M31.3,190.6H2.4v5.7h28.9V190.6z M31.3,205.1H2.4v5.7h28.9V205.1z M61.1,219.6H2.4v5.7  h58.8V219.6z M31.3,234H2.4v5.7h28.9V234z M31.3,248.5H2.4v5.7h28.9V248.5z M31.3,263H2.4v5.7h28.9V263z M31.3,277.5H2.4v5.7h28.9  V277.5z M102.7,291.9H2.4v5.7h100.3V291.9z" />
+</svg>

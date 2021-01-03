@@ -1,0 +1,28 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 300 300"
+     preserveAspectRatio="none">
+	 
+	<hmi:self type="widget" displayName="Area_Warm" name="extended.Area_Warm" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BasicColor"         type="HmiColor" default="0xFFFFE700" />
+		<hmi:paramDef name="ContrastColor"      type="HmiColor" default="0xFFFF0400" />
+    </hmi:self>
+	
+     <defs>
+       <hmi:localDef name="Color" type="HmiColor" hmi-bind:value="{{ParamProps.BasicColor}}"  />
+     </defs>  
+  <linearGradient id="Gradation_1_" gradientUnits="userSpaceOnUse" x1="149.9995" y1="3.25" x2="149.9995" y2="297.6324">
+    <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(ParamProps.BasicColor)}}" />
+    <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(ParamProps.ContrastColor)}}" />
+  </linearGradient>
+  <rect id="Gradation" x="2" y="2" fill="url(#Gradation_1_)" width="296" height="296" />
+</svg>

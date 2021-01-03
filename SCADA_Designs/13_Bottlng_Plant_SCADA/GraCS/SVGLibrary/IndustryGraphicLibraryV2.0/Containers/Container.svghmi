@@ -1,0 +1,154 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 139.5 300"
+     preserveAspectRatio="none">
+	 
+	<hmi:self type="widget" displayName="Container" name="extended.Container" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BasicColor"         type="HmiColor"  default="0xFFEEEEEE"  />
+		<hmi:paramDef name="ContrastColor"      type="HmiColor"  default="0xFFCDCDCD"  />
+    </hmi:self>
+	
+     <defs>
+       <hmi:localDef name="Color" type="HmiColor" hmi-bind:value="{{ParamProps.BasicColor}}"  />
+     </defs>   
+  <metadata>
+    <hmi:self itemType="HmiButton" name="Template for Container" version="1.0.0" performanceClass="xl" />
+  </metadata>
+  <g id="Bottom">
+    <linearGradient id="Shape_3_" gradientUnits="userSpaceOnUse" x1="16.0298" y1="292.9976" x2="133.9782" y2="292.9976">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.353))}}" />
+      <stop offset="4.758149e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.290))}}" />
+      <stop offset="0.1509" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.173))}}" />
+      <stop offset="0.2395" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.102))}}" />
+      <stop offset="0.3025" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.075))}}" />
+      <stop offset="0.3733" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.161))}}" />
+      <stop offset="0.5924" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.412))}}" />
+      <stop offset="0.7773" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.596))}}" />
+      <stop offset="0.9188" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.706))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.749))}}" />
+    </linearGradient>
+    <rect id="Shape_2_" x="9.8" y="288.4" fill="url(#Shape_3_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="119.9" height="9.3" />
+    <path id="Shadow" fill="#424242" d="M10.1,289v-0.7h119.1v4C129.2,292.4,91.7,289,10.1,289z" />
+  </g>
+  <g id="Container_1_">
+    <linearGradient id="Shape_4_" gradientUnits="userSpaceOnUse" x1="2.4077" y1="164.1021" x2="137.0352" y2="164.1021">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.353))}}" />
+      <stop offset="4.758149e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.290))}}" />
+      <stop offset="0.1509" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.173))}}" />
+      <stop offset="0.2395" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.102))}}" />
+      <stop offset="0.3025" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.075))}}" />
+      <stop offset="0.4074" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.090))}}" />
+      <stop offset="0.514" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.137))}}" />
+      <stop offset="0.6214" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.220))}}" />
+      <stop offset="0.7294" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.329))}}" />
+      <stop offset="0.8378" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.475))}}" />
+      <stop offset="0.9452" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.647))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.749))}}" />
+    </linearGradient>
+    <path id="Shape" fill="url(#Shape_4_)" stroke="#8C8C91" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M132.6,39.8c-9.4,0-116.3,0-125.7,0c-4.6,0-4.5,4.5-4.5,4.5v239.5c0,0-0.1,4.5,4.5,4.5c9.4,0,116.3,0,125.7,0   c4.6,0,4.5-4.5,4.5-4.5V44.3C137,44.3,137.1,39.8,132.6,39.8z" />
+    <linearGradient id="Reflection_Container_1_" gradientUnits="userSpaceOnUse" x1="11.938" y1="164.1514" x2="28.2846" y2="164.1514">
+      <stop offset="0" stop-color="#F2F2F2" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#F7F7F7" stop-opacity="0.7" />
+    </linearGradient>
+    <rect id="Reflection_Container" x="12.5" y="46.1" fill="url(#Reflection_Container_1_)" width="27.1" height="236.1" />
+    <linearGradient id="Shape_Bottom_1_" gradientUnits="userSpaceOnUse" x1="52.4902" y1="217.6626" x2="73.4898" y2="298.6606">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.353))}}" />
+      <stop offset="4.758149e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.290))}}" />
+      <stop offset="0.1509" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.173))}}" />
+      <stop offset="0.2395" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.102))}}" />
+      <stop offset="0.3025" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.075))}}" />
+      <stop offset="0.4074" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.090))}}" />
+      <stop offset="0.514" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.137))}}" />
+      <stop offset="0.6214" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.220))}}" />
+      <stop offset="0.7294" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.329))}}" />
+      <stop offset="0.8378" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.475))}}" />
+      <stop offset="0.9452" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.647))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.749))}}" />
+    </linearGradient>
+    <path id="Shape_Bottom" fill="url(#Shape_Bottom_1_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.4,283.9c0,0,0,4.5,4.5,4.5c9.4,0,116.3,0,125.7,0c4.6,0,4.5-4.5,4.5-4.5" />
+    <line id="Shadow_Line_Bottom" fill="none" stroke="#424242" stroke-linejoin="round" stroke-miterlimit="10" x1="129.3" y1="288.4" x2="10.1" y2="288.4" />
+    <linearGradient id="Shape_Below_1_" gradientUnits="userSpaceOnUse" x1="66.2583" y1="-108.0459" x2="71.3052" y2="-73.7277" gradientTransform="matrix(1 0 0 -1 0 -40.2988)">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.353))}}" />
+      <stop offset="4.758149e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.290))}}" />
+      <stop offset="0.1509" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.173))}}" />
+      <stop offset="0.2395" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.102))}}" />
+      <stop offset="0.3025" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.075))}}" />
+      <stop offset="0.4074" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.090))}}" />
+      <stop offset="0.514" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.137))}}" />
+      <stop offset="0.6214" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.220))}}" />
+      <stop offset="0.7294" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.329))}}" />
+      <stop offset="0.8378" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.475))}}" />
+      <stop offset="0.9452" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.647))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.749))}}" />
+    </linearGradient>
+    <path id="Shape_Below_3_" fill="url(#Shape_Below_1_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.4,44.3c0,0-0.1-4.5,4.5-4.5c9.4,0,116.3,0,125.7,0c4.6,0,4.5,4.5,4.5,4.5" />
+    <linearGradient id="Shape_Ring_Top_1_" gradientUnits="userSpaceOnUse" x1="19.3535" y1="34.7031" x2="119.6145" y2="34.7031">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.353))}}" />
+      <stop offset="4.758149e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.290))}}" />
+      <stop offset="0.1509" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.173))}}" />
+      <stop offset="0.2395" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.102))}}" />
+      <stop offset="0.3025" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.075))}}" />
+      <stop offset="0.4074" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.090))}}" />
+      <stop offset="0.514" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.137))}}" />
+      <stop offset="0.6214" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.220))}}" />
+      <stop offset="0.7294" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.329))}}" />
+      <stop offset="0.8378" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.475))}}" />
+      <stop offset="0.9452" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.647))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.749))}}" />
+    </linearGradient>
+    <rect id="Shape_Ring_Top" x="17.2" y="29.6" fill="url(#Shape_Ring_Top_1_)" stroke="#8C8C91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="105" height="10.3" />
+    <linearGradient id="Edge_Below_1_" gradientUnits="userSpaceOnUse" x1="-4.25" y1="283.0215" x2="160.5918" y2="283.0215">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.398))}}" />
+      <stop offset="0.2001" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.416))}}" />
+      <stop offset="0.4211" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.469))}}" />
+      <stop offset="0.6522" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.553))}}" />
+      <stop offset="0.8887" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.675))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.741))}}" />
+    </linearGradient>
+    <path id="Edge_Below" fill="url(#Edge_Below_1_)" d="M136.1,282.2H3.1v1.7c13.1,0,126.1,0,133,0V282.2z" />
+    <linearGradient id="Edge_Top_1_" gradientUnits="userSpaceOnUse" x1="24.979" y1="45.2812" x2="165.1344" y2="45.2812">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.000))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.516))}}" />
+    </linearGradient>
+    <path id="Edge_Top" fill="url(#Edge_Top_1_)" d="M136.1,44.4H3.1v1.7c13.1,0,126.1,0,133,0V44.4z" />
+    <linearGradient id="Reflection_Top_1_" gradientUnits="userSpaceOnUse" x1="25.4614" y1="34.7988" x2="33.8448" y2="34.7988">
+      <stop offset="0" stop-color="#F2F2F2" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#F7F7F7" stop-opacity="0.7" />
+    </linearGradient>
+    <rect id="Reflection_Top" x="27.4" y="30.8" fill="url(#Reflection_Top_1_)" width="14.9" height="8" />
+    <linearGradient id="Reflection_Line_Top_1_" gradientUnits="userSpaceOnUse" x1="35.1035" y1="30.3877" x2="143.6578" y2="30.3877">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#7C7C7B" />
+    </linearGradient>
+    <path id="Reflection_Line_Top" fill="url(#Reflection_Line_Top_1_)" d="M121.2,30h-103v0.8c10.1,0,97.7,0,103,0V30z" />
+  </g>
+  <g id="Lid">
+    <linearGradient id="Shape_5_" gradientUnits="userSpaceOnUse" x1="18.9316" y1="15.9688" x2="109.1398" y2="15.9688">
+      <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.661))}}" />
+      <stop offset="1.586480e-02" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.637))}}" />
+      <stop offset="0.1171" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.527))}}" />
+      <stop offset="0.2183" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.449))}}" />
+      <stop offset="0.3189" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.402))}}" />
+      <stop offset="0.4178" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.386))}}" />
+      <stop offset="0.5211" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.412))}}" />
+      <stop offset="0.6663" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.482))}}" />
+      <stop offset="0.8354" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.600))}}" />
+      <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.ContrastColor, 0.741))}}" />
+    </linearGradient>
+    <rect id="Shape_1_" x="17.2" y="2.4" fill="url(#Shape_5_)" stroke="#646567" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="105" height="27.2" />
+    <linearGradient id="Reflection_1_" gradientUnits="userSpaceOnUse" x1="-13.1172" y1="16.0303" x2="-26.0335" y2="16.0303">
+      <stop offset="0" stop-color="#F2F2F2" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#F7F7F7" stop-opacity="0.7" />
+    </linearGradient>
+    <rect id="Reflection" x="27.4" y="3.4" fill="url(#Reflection_1_)" width="14.9" height="25.2" />
+  </g>
+</svg>
